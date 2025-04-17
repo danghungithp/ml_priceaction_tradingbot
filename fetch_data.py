@@ -18,7 +18,7 @@ def get_historical_data(symbol, interval, years_back=1):
     """
     base_url = "https://spot-markets.goonus.io/candlesticks"
     end_time = int(time.time() * 1000) # Current time in milliseconds
-    start_time = int((datetime.now() - timedelta(days=years_back * 365)).timestamp() * 1000)
+    start_time = int((datetime.now() - timedelta(days=years_back * 90)).timestamp() * 1000)
 
     print(f"Fetching data for {symbol} ({interval}) from {datetime.fromtimestamp(start_time/1000)} to {datetime.fromtimestamp(end_time/1000)}")
 

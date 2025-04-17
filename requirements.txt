@@ -2,3 +2,5 @@ requests
 pandas
 pandas-ta
 scikit-learn
+Flask
+plotly
